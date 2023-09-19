@@ -1,0 +1,1 @@
+{"name":"Local: Short_Substrings","url":"d:\\Practice Questions\\python questions\\Short_Substrings.py","tests":[{"id":1694821316708,"input":"4\nabbaac\nac\nbccddaaf\nzzzzzzzzzz","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Practice Questions\\python questions\\Short_Substrings.py","group":"local","local":true}

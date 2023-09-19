@@ -1,0 +1,1 @@
+{"name":"Local: tiral","url":"d:\\Practice Questions\\tiral.py","tests":[{"id":1694446586767,"input":"3\n1\n100000\n2\n1 1\n3\n10 3 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Practice Questions\\tiral.py","group":"local","local":true}
