@@ -1,29 +1,51 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
-class employee{
-    private: int a, int b, int c;
-
-    public: int d, int c;
-
-    void setData(int a1, int b1, int c1);
-    void getData(){
-        cout<<a<<endl;
-        cout<<b<<endl;
-        cout<<c<<endl;
-    }
+class binary{
+    string s;
+    public:
+        void read(void);
+        void chk_bin(void);
+        void ones(void);
+        void display(void);
 };
 
-void employee :: setData(int a1, int b1, int c1){
-    a = a1;
-    b = b1;
-    c = c1;
+void binary :: read(void){
+    cout<<"Enter a binary number"<<endl;
+    cin>>s;
+}
+
+void binary :: chk_bin(void){
+    for(int i=0; i < s.length(); i++){
+        if (s.at(i) != '0' && s.at(i) != '1'){
+            cout<<"Incorrect binary format";
+        }
+    }
+}
+
+void binary :: ones(void){
+    for(int i = 0;i<s.length();i++){
+        if(s.at(i) == '1'){
+            s.at(i) = '0';
+        }
+        else{
+            s.at(i) = '1';
+        }
+    }
+}
+
+void binary :: display(void){
+    for(int i = 0;i<s.length();i++){
+        cout<<s.at(i)<<endl;
+    }
 }
 
 int main(){
-    employee harry;
-    harry.setData(10,10,10);
-    harry.d = 4;
-
+    binary b;
+    b.read();
+    b.chk_bin();
+    b.ones();
+    b.display();
     return 0;
 }
