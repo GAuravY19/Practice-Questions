@@ -1,51 +1,41 @@
 #include<iostream>
-#include<string>
 using namespace std;
 
-class binary{
-    string s;
+class Employee{
+    int id;
+    static int count;
     public:
-        void read(void);
-        void chk_bin(void);
-        void ones(void);
-        void display(void);
+        void SetData(void){
+            cout<<"Enter the id"<<endl;
+            cin>>id;
+            count++;
+        }
+
+        void GetData(void){
+            cout<<"Your Employee Id is "<<id<<" and this is employee id count "<<count<<endl;
+        }
+
+        static void getCount(void){
+            cout<<"The value of count is "<<count<<endl;
+        }
 };
 
-void binary :: read(void){
-    cout<<"Enter a binary number"<<endl;
-    cin>>s;
-}
+int Employee :: count;
 
-void binary :: chk_bin(void){
-    for(int i=0; i < s.length(); i++){
-        if (s.at(i) != '0' && s.at(i) != '1'){
-            cout<<"Incorrect binary format";
-        }
-    }
-}
-
-void binary :: ones(void){
-    for(int i = 0;i<s.length();i++){
-        if(s.at(i) == '1'){
-            s.at(i) = '0';
-        }
-        else{
-            s.at(i) = '1';
-        }
-    }
-}
-
-void binary :: display(void){
-    for(int i = 0;i<s.length();i++){
-        cout<<s.at(i)<<endl;
-    }
-}
 
 int main(){
-    binary b;
-    b.read();
-    b.chk_bin();
-    b.ones();
-    b.display();
+    Employee harry, john, garry;
+    harry.SetData();
+    harry.GetData();
+    Employee :: getCount();
+
+    john.SetData();
+    john.GetData();
+    Employee :: getCount();
+
+    garry.SetData();
+    garry.GetData();
+    Employee :: getCount();
+
     return 0;
 }
