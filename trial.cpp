@@ -1,9 +1,9 @@
-#include<iostream>
-using namespace std;
+class Solution{
+    public:
+    // arr[] : int input array of integers
+    // k : the quadruple sum required
+    vector<vector<int> > fourSum(vector<int> &arr, int k) {
+        // Your code goes here
 
-int main(){
-    int n = -10003;
-    cout<<n%10;
-    cout<<n/10;
-    return 0;
-}
+    }
+};
