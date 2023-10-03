@@ -1,0 +1,1 @@
+{"name":"Local: divide","url":"d:\\Practice Questions\\python questions\\divide.py","tests":[{"id":1696259360670,"input":"7\n1\n2\n3\n12\n12345\n15116544\n387420489","output":"0\n-1\n2\n-1\n-1\n12\n36"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Practice Questions\\python questions\\divide.py","group":"local","local":true}
